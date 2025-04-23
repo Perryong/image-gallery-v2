@@ -17,7 +17,7 @@ export function About() {
         <div className="flex justify-center">
           <div className="rounded-lg overflow-hidden shadow-lg max-w-md w-full">
             <img
-              src="/anime.webp"
+              src="/anime.jpg"
               alt="Photographer"
               className="w-full h-auto"
             />
