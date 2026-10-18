@@ -1,8 +1,10 @@
 // src/components/about/About.tsx
 import { Separator } from '@/components/ui/separator';
 
-// 1️⃣  Import the image from src/assets
-import animePhoto from '@/assets/anime.jpg';
+import pikachuRain from '@/assets/about/pikachu-rain.jpg';
+import gengarRain from '@/assets/about/gengar-rain.png';
+import gengarGarden from '@/assets/about/gengar-garden.png';
+import snorlaxPond from '@/assets/about/snorlax-pond.jpg';
 
 export function About() {
   return (
@@ -16,15 +18,11 @@ export function About() {
           <Separator className="max-w-md mx-auto my-6" />
         </div>
 
-        {/* 2️⃣  Use the imported URL so the path is correct on GitHub Pages */}
-        <div className="flex justify-center">
-          <div className="rounded-lg overflow-hidden shadow-lg max-w-md w-full">
-            <img
-              src={animePhoto}
-              alt="Photographer"
-              className="w-full h-auto"
-            />
-          </div>
+        <div className="grid grid-cols-4 items-start gap-2 sm:gap-4 max-w-6xl mx-auto">
+          <img src={pikachuRain} alt="Pikachu holding an umbrella on a rainy street" className="w-full h-auto rounded-lg shadow-lg" loading="lazy" />
+          <img src={gengarRain} alt="Gengar holding a purple umbrella on a rainy street" className="w-full h-auto rounded-lg shadow-lg" loading="lazy" />
+          <img src={gengarGarden} alt="Gengar beneath cherry blossoms in a garden" className="w-full h-auto rounded-lg shadow-lg" loading="lazy" />
+          <img src={snorlaxPond} alt="Snorlax resting beside a sunlit pond" className="w-full h-auto rounded-lg shadow-lg" loading="lazy" />
         </div>
       </div>
     </section>
